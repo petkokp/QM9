@@ -10,3 +10,8 @@ def sort_by_atomic_number(atomic_numbers, matrix):
     sorted_indices = np.argsort(-atomic_numbers)
     sorted_matrix = matrix[sorted_indices][:, sorted_indices]
     return sorted_matrix
+
+def randomly_sort_matrix(matrix):
+    permutation = np.random.permutation(matrix.shape[0])
+    matrix_sorted = matrix[permutation, :][:, permutation]
+    return matrix_sorted

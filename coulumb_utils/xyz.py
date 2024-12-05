@@ -2,7 +2,7 @@ from pathlib import Path
 import numpy as np
 import random
 import pandas as pd
-import tqdm
+from tqdm import tqdm
 from .periodic_table import PERIODIC_TABLE
 
 def read_xyz(filename: Path):
